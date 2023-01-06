@@ -11,6 +11,7 @@ AbstractBmi <- R6Class(
     # R6 constructor is also called initialize so rename bmi initialize
     bmi_initialize = function(config_file) stop('Not implemented'),
     update = function() stop('Not implemented'),
+    updateUntil = function() stop('Not implemented'),
     # R6 destructor is also called finalize so rename bmi finalize
     bmi_finalize = function() stop('Not implemented'),
     runModel = function() stop('Not implemented'),
