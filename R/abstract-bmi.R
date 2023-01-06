@@ -16,6 +16,8 @@ AbstractBmi <- R6Class(
     runModel = function() stop('Not implemented'),
 
     getComponentName = function() stop('Not implemented'),
+    getInputItemCount = function() stop('Not implemented'),
+    getOutputItemCount = function() stop('Not implemented'),   
     getInputVarNames = function() stop('Not implemented'),
     getOutputVarNames = function() stop('Not implemented'),
 
@@ -52,6 +54,7 @@ AbstractBmi <- R6Class(
     getGridFaceCount = function(grid_id) stop('Not implemented'),
     getGridEdgeNodes = function(grid_id) stop('Not implemented'),
     getGridFaceNodes = function(grid_id) stop('Not implemented'),
+    getGridFaceEdges = function(grid_id) stop('Not implemented'),
     getGridNodesPerFace = function(grid_id) stop('Not implemented')
   )
 )
