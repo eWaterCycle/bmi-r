@@ -11,7 +11,7 @@ AbstractBmi <- R6Class(
     # R6 constructor is also called initialize so rename bmi initialize
     bmi_initialize = function(config_file) stop('Not implemented'),
     update = function() stop('Not implemented'),
-    updateUntil = function() stop('Not implemented'),
+    updateUntil = function(time) stop('Not implemented'),
     # R6 destructor is also called finalize so rename bmi finalize
     bmi_finalize = function() stop('Not implemented'),
     runModel = function() stop('Not implemented'),
@@ -22,28 +22,29 @@ AbstractBmi <- R6Class(
     getInputVarNames = function() stop('Not implemented'),
     getOutputVarNames = function() stop('Not implemented'),
 
-    getTimeUnits = function() stop('Not implemented'),
-    getTimeStep = function() stop('Not implemented'),
-    getCurrentTime = function() stop('Not implemented'),
-    getStartTime = function() stop('Not implemented'),
-    getEndTime = function() stop('Not implemented'),
-
     getVarGrid = function(name) stop('Not implemented'),
     getVarType = function(name) stop('Not implemented'),
-    getVarItemSize = function(name) stop('Not implemented'),
     getVarUnits = function(name) stop('Not implemented'),
+    getVarItemSize = function(name) stop('Not implemented'),
     getVarNBytes = function(name) stop('Not implemented'),
     getVarLocation = function(name) stop('Not implemented'),
 
+    getCurrentTime = function() stop('Not implemented'),
+    getStartTime = function() stop('Not implemented'),
+    getEndTime = function() stop('Not implemented'),
+    getTimeUnits = function() stop('Not implemented'),
+    getTimeStep = function() stop('Not implemented'),
+
     getValue = function(name) stop('Not implemented'),
     getValueAtIndices = function(name, indices) stop('Not implemented'),
+    getvaluePtr = function(name) stop('Not implemented'),
 
     setValue = function(name, values) stop('Not implemented'),
     setValueAtIndices = function(name, indices, values) stop('Not implemented'),
 
+    getGridRank = function(grid_id) stop('Not implemented'),
     getGridSize = function(grid_id) stop('Not implemented'),
     getGridType = function(grid_id) stop('Not implemented'),
-    getGridRank = function(grid_id) stop('Not implemented'),
     getGridShape = function(grid_id) stop('Not implemented'),
     getGridSpacing = function(grid_id) stop('Not implemented'),
     getGridOrigin = function(grid_id) stop('Not implemented'),
