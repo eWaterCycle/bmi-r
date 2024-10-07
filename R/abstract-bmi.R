@@ -1,7 +1,7 @@
 library(R6)
 
 #' Abstract class defining the basic model interface
-#' 
+#'
 #' Documentation on each function can be found at https://bmi.readthedocs.io/
 #'
 #' @export
@@ -11,52 +11,51 @@ AbstractBmi <- R6Class(
     # R6 constructor is also called initialize so rename bmi initialize
     bmi_initialize = function(config_file) stop('Not implemented'),
     update = function() stop('Not implemented'),
-    updateUntil = function(time) stop('Not implemented'),
+    update_until = function(time) stop('Not implemented'),
     # R6 destructor is also called finalize so rename bmi finalize
     bmi_finalize = function() stop('Not implemented'),
-    runModel = function() stop('Not implemented'),
 
-    getComponentName = function() stop('Not implemented'),
-    getInputItemCount = function() stop('Not implemented'),
-    getOutputItemCount = function() stop('Not implemented'),   
-    getInputVarNames = function() stop('Not implemented'),
-    getOutputVarNames = function() stop('Not implemented'),
+    get_component_name = function() stop('Not implemented'),
+    get_input_item_count = function() stop('Not implemented'),
+    get_output_item_count = function() stop('Not implemented'),
+    get_input_var_names = function() stop('Not implemented'),
+    get_output_var_names = function() stop('Not implemented'),
 
-    getVarGrid = function(name) stop('Not implemented'),
-    getVarType = function(name) stop('Not implemented'),
-    getVarUnits = function(name) stop('Not implemented'),
-    getVarItemSize = function(name) stop('Not implemented'),
-    getVarNBytes = function(name) stop('Not implemented'),
-    getVarLocation = function(name) stop('Not implemented'),
+    get_var_grid = function(name) stop('Not implemented'),
+    get_var_type = function(name) stop('Not implemented'),
+    get_var_units = function(name) stop('Not implemented'),
+    get_var_item_size = function(name) stop('Not implemented'),
+    get_var_n_bytes = function(name) stop('Not implemented'),
+    get_var_location = function(name) stop('Not implemented'),
 
-    getCurrentTime = function() stop('Not implemented'),
-    getStartTime = function() stop('Not implemented'),
-    getEndTime = function() stop('Not implemented'),
-    getTimeUnits = function() stop('Not implemented'),
-    getTimeStep = function() stop('Not implemented'),
+    get_current_time = function() stop('Not implemented'),
+    get_start_time = function() stop('Not implemented'),
+    get_end_time = function() stop('Not implemented'),
+    get_time_units = function() stop('Not implemented'),
+    get_time_step = function() stop('Not implemented'),
 
-    getValue = function(name) stop('Not implemented'),
-    getValueAtIndices = function(name, indices) stop('Not implemented'),
-    getvaluePtr = function(name) stop('Not implemented'),
+    get_value = function(name) stop('Not implemented'),
+    get_value_at_indices = function(name, indices) stop('Not implemented'),
+    get_value_ptr = function(name) stop('Not implemented'),
 
-    setValue = function(name, values) stop('Not implemented'),
-    setValueAtIndices = function(name, indices, values) stop('Not implemented'),
+    set_value = function(name, values) stop('Not implemented'),
+    set_value_at_indices = function(name, indices, values) stop('Not implemented'),
 
-    getGridRank = function(grid_id) stop('Not implemented'),
-    getGridSize = function(grid_id) stop('Not implemented'),
-    getGridType = function(grid_id) stop('Not implemented'),
-    getGridShape = function(grid_id) stop('Not implemented'),
-    getGridSpacing = function(grid_id) stop('Not implemented'),
-    getGridOrigin = function(grid_id) stop('Not implemented'),
-    getGridX = function(grid_id) stop('Not implemented'),
-    getGridY = function(grid_id) stop('Not implemented'),
-    getGridZ = function(grid_id) stop('Not implemented'),
-    getGridNodeCount = function(grid_id) stop('Not implemented'),
-    getGridEdgeCount = function(grid_id) stop('Not implemented'),
-    getGridFaceCount = function(grid_id) stop('Not implemented'),
-    getGridEdgeNodes = function(grid_id) stop('Not implemented'),
-    getGridFaceNodes = function(grid_id) stop('Not implemented'),
-    getGridFaceEdges = function(grid_id) stop('Not implemented'),
-    getGridNodesPerFace = function(grid_id) stop('Not implemented')
+    get_grid_rank = function(grid_id) stop('Not implemented'),
+    get_grid_size = function(grid_id) stop('Not implemented'),
+    get_grid_type = function(grid_id) stop('Not implemented'),
+    get_grid_shape = function(grid_id) stop('Not implemented'),
+    get_grid_spacing = function(grid_id) stop('Not implemented'),
+    get_grid_origin = function(grid_id) stop('Not implemented'),
+    get_grid_x = function(grid_id) stop('Not implemented'),
+    get_grid_y = function(grid_id) stop('Not implemented'),
+    get_grid_z = function(grid_id) stop('Not implemented'),
+    get_grid_node_count = function(grid_id) stop('Not implemented'),
+    get_grid_edge_count = function(grid_id) stop('Not implemented'),
+    get_grid_face_count = function(grid_id) stop('Not implemented'),
+    get_grid_edge_nodes = function(grid_id) stop('Not implemented'),
+    get_grid_face_nodes = function(grid_id) stop('Not implemented'),
+    get_grid_face_edges = function(grid_id) stop('Not implemented'),
+    get_grid_nodes_per_face = function(grid_id) stop('Not implemented')
   )
 )
