@@ -1,7 +1,7 @@
 Package: bmi
 Type: Package
 Title: basic model interface
-Version: 2.2.0
+Version: 2.2.1
 Date: 2024-10-07
 Author: S. Verhoeven
 Maintainer: S. Verhoeven <s.verhoeven@esciencecenter.nl>

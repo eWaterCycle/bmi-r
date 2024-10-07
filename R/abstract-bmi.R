@@ -24,8 +24,8 @@ AbstractBmi <- R6Class(
     get_var_grid = function(name) stop('Not implemented'),
     get_var_type = function(name) stop('Not implemented'),
     get_var_units = function(name) stop('Not implemented'),
-    get_var_item_size = function(name) stop('Not implemented'),
-    get_var_n_bytes = function(name) stop('Not implemented'),
+    get_var_itemsize = function(name) stop('Not implemented'),
+    get_var_nbytes = function(name) stop('Not implemented'),
     get_var_location = function(name) stop('Not implemented'),
 
     get_current_time = function() stop('Not implemented'),
